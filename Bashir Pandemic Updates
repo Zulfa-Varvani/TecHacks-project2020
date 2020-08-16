@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+	<html>
+		<title>Pandemic</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			.button {
+			  font: bold 11px Arial;
+			  text-decoration: none;
+			  background-color: #EEEEEE;
+			  color: #333333;
+			  padding: 2px 6px 2px 6px;
+			  border-top: 1px solid #CCCCCC;
+			  border-right: 1px solid #333333;
+			  border-bottom: 1px solid #333333;
+			  border-left: 1px solid #CCCCCC;
+			}
+		</style>
+	<body>
+
+		<div class="w3-container" style="background-color: #f4511e">
+			<h1>Pandemic News and Updates</h1>
+		</div>
+		
+		<div class="w3-content">
+			<div class="w3-row w3-margin">
+				<div class="w3-third"><br><br>
+					<img src="https://cdn.pixabay.com/photo/2018/01/27/23/46/toronto-3112508_960_720.jpg" style="width:100%;min-height:200px">
+				</div>
+				<div class="w3-twothird w3-container">
+					<h2>Canada</h2>
+					  <p>
+					  	<strong>2020/21 School Year</strong><br><br>
+					    The province of Ontario is currently in the middle of deciding what the next school year for k-12 will look like. The general idea is that schools will open in an adapted model, with attendance in-person non-mandatory. Parents have the ultimate decision of whether their child will attend in-person school or online school.
+					  </p>
+					  <a href="https://toronto.ctvnews.ca/ontario-unveils-plan-to-reopen-schools-in-september-here-s-what-you-need-to-know-1.5044038" class="button">Learn More >> </a>
+				</div>
+			</div>
+			<div class="w3-row w3-margin">
+				<div class="w3-third"><br><br>
+				  <img src="https://cdn.pixabay.com/photo/2014/07/01/12/35/taxi-cab-381233_960_720.jpg" style="width:100%;min-height:200px">
+				</div>
+				<div class="w3-twothird w3-container">
+				  <h2>United States of America</h2>
+					  <p>
+					  	<strong>Good News!</strong><br><br>
+					    It looks like USA is providing some aid to its citizens during these trying times. It has been reported that ome major health insurers have promised to cover care and testing related to COVID-19. A number of celebrities and professional athletes have donated significant resources to help those taking a financial hit by the pandemic, such as the workers at the stadiums where athletes play. And there are more! Amid all the doom and gloom, there are some positive stories, positive messages and reasons to remain hopeful.
+					  </p>
+					  <a href="https://www.health.harvard.edu/blog/the-coronavirus-pandemic-is-not-good-but-the-news-is-not-all-bad-2020031919247" class="button">Learn More >> </a>
+				</div>
+			</div>
+			<div class="w3-row w3-margin">
+				<div class="w3-third"><br><br>
+				  <img src="https://cdn.pixabay.com/photo/2016/03/06/05/03/seascape-1239727_960_720.jpg" style="width:100%;min-height:200px">
+				</div>
+				<div class="w3-twothird w3-container">
+				  <h2>New Zealand</h2>
+					<p>
+					  	<strong>Champions of proper resonse to pandemic</strong><br><br>
+					    New Zealand is now known for their coordinated response and prevention of the Covid-19 pandemic. They were successful in closing everything immediately, with strict rules and regulations for its citizens. Unlike other places, where people are going to beaches, or going to a park with 10000 people, New Zealanders were very cautious. Hence the decreased reported cases and the relieving lift on restrictions.
+					 </p>
+					 <a href="https://www.contagionlive.com/news/how-did-new-zealand-control-covid19" class="button">Learn More >> </a><br><br><br><br>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>
