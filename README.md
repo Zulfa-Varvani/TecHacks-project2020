@@ -1,6 +1,6 @@
 # TecHacks-project2020
 Here is our TecHacks project! Made using Qoom. We used HTML, CSS, and Javascript. We also used a general template from w3schools, and edited from there according to our preferences.
-The category prize we aim for are: 
+The prizes we aim for are: 
 1) Winnner for health track
 2) Overall top three
 3) Most creative hack
