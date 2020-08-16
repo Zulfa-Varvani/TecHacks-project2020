@@ -5,7 +5,7 @@ The prizes we aim for are:
 2) Overall top three
 3) Most creative hack
 4) Beginner hack (all of us have less than a year's experience with web development)
-5) Sponsored challenege by Qoom
+5) Sponsored challenge by Qoom
 
 Qoom link: https://cozylime81.qoom.space/explore?
 Main website page: https://cozylime81.qoom.space/bashir.html#about
