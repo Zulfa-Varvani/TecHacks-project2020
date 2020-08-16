@@ -8,4 +8,4 @@ The prizes we aim for are:
 5) Sponsored challenge by Qoom
 
 Qoom link: https://cozylime81.qoom.space/explore?
-Main website page: https://cozylime81.qoom.space/bashir.html#about
+Main website page: https://cozylime81.qoom.space/bashir.html
