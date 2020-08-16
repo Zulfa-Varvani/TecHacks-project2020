@@ -9,3 +9,7 @@ The prizes we aim for are:
 
 Qoom link: https://cozylime81.qoom.space/explore?
 Main website page: https://cozylime81.qoom.space/bashir.html
+Our amazing team members are:
+1) Zulfa Varvani
+2) Fatima Formuli
+3) Hamdia Abdullahi
