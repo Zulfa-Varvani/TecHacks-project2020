@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Bashir - Everything you need</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .button {
+	  font: bold 11px Arial;
+	  text-decoration: none;
+	  background-color: #EEEEEE;
+	  color: #333333;
+	  padding: 2px 6px 2px 6px;
+	  border-top: 1px solid #CCCCCC;
+	  border-right: 1px solid #333333;
+	  border-bottom: 1px solid #333333;
+	  border-left: 1px solid #CCCCCC;
+	}
+  .jumbotron-bg {
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 30%;
+  }
+  .jumbotron {
+  	background: rgba(0, 0, 0, 0.4);
+    color: 	white;
+    font-weight: bold;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail-pandemic {
+  	padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    background-size: cover;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 80;
+    height: 70;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-body {
+  	text-align: left;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Bashir</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#pandemic">PANDEMIC</a></li>
+        <li><a href="#health">HEALTH</a></li>
+        <li><a href="#stories">STORIES</a></li>
+        <li><a href="#events">EVENTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron-bg">
+  <div class="jumbotron text-center">
+	  <h1><strong>BASHIR</strong></h1> 
+	  <h3><strong>Everything You Need</strong></h3> 
+	  <form>
+	    <div class="input-group">
+	      <input type="search" class="form-control" size="50" placeholder="Search..." required>
+	      <div class="input-group-btn">
+	        <button type="button" class="btn btn-danger">Search</button>
+	      </div>
+	    </div>
+	  </form>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Us</h2><br>
+      <h4>Bashir is intended to inform and provide relavant information for all its users. We aim to provide a centralized platform with relaible, sourced information to meet everyone’s needs!</h4><br>
+      <p>Want to learn more? Navigate our website!</p>
+    </div>
+        <div class="col-sm-4">
+	    	<img src="Bashir_Logo_orange.jpg" width="230" height="230">
+	    </div>
+  </div>
+</div>
+
+<div id="pandemic" class="container-fluid text-center bg-grey">
+  <h2>Pandemic News and Updates</h2><br>
+  <h4>Catch up on the latest pandemic news!</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail-pandemic" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415_960_720.jpg');">
+        <p><strong>France</strong></p>
+        <p>Bonjour! Learn about how France is dealing with the pandemic</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail-pandemic" style="background-image: url('https://cdn.pixabay.com/photo/2017/05/09/03/47/buildings-2297210_960_720.jpg'); background-position: 60% 40%">
+        <p><strong>Canada</strong></p>
+        <p>Eh! Why don't we learn what Canada's pandemic updates are? It'll be cool!</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail-pandemic" style="background-image: url('https://cdn.pixabay.com/photo/2014/05/02/23/46/new-york-city-336475_960_720.jpg'); background-position: center">
+        <p><strong>USA</strong></p>
+        <p>Yeah, let's see what America is up to, and how they're dealing!</p>
+      </div>
+    </div>
+  </div>
+  <a href="pandemic-updates.html" class="button">Learn More >> </a>
+</div>
+
+<div id="health" class="container-fluid text-center">
+	<h2>Self-care is the best care!</h2>
+	<div class="row text-center slideanim">
+	    <div class="col-sm-4">
+	      <div class="thumbnail">
+	        <img src="https://images.squarespace-cdn.com/content/v1/55cda908e4b0513a93e99588/1559768475510-KDO6QXL5ZL763YIS37ZV/ke17ZwdGBToddI8pDm48kC9qu2gvgDc1fHZgGjPXHQ5Zw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGjw91RGhfjj5evWzHqs9oJjjqC-iiVlxKn7g29su4hW2bSd6kfRtgWHgNMDgGnmDY/hygiene-icon.png" style="width:80px;height:70px;">
+	        <p><strong>Hygiene</strong></p>
+	        <p>Here are some tips & tricks to maintain a healthy lifestyle!</p>
+	      </div>
+	    </div>
+	    <div class="col-sm-4">
+	      <div class="thumbnail">
+	        <img src="https://www.un.org/en/healthy-workforce/images/Mental-Health-visual-identity.jpg" style="width:80px;height:70px;">
+	        <p><strong>Mental Health</strong></p>
+	        <p>Keeping your mental a priority is very important, read more here!</p>
+	      </div>
+	    </div>
+	    <div class="col-sm-4">
+	      <div class="thumbnail">
+	        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTc2YSCjEmZeDHmy-HiCwkIpeTcNQnGUlmrBQ&usqp=CAU" style="width:80px;height:70px;">
+	        <p><strong>Fitness</strong></p>
+	        <p>Need some fitness routines? We're here to help!</p>
+	      </div>
+	    </div>
+	</div><br>
+	<a href="health.html" class="button">Learn More >> </a>
+</div>
+
+<div id="stories" class="container-fluid text-center bg-grey">
+  <h2>Read some of our favourite pandemic stories!</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Against all odds, I've finally learnt how to cook!"<br><span>Michelle Smith, Pandemic Eats!!</span></h4>
+      </div>
+      <div class="item">
+        <h4>"My sleep schedule is all messed and I'm bored, I want to go to school!"<br><span>Bob Keele, I Regret Hating School!</span></h4>
+      </div>
+      <div class="item">
+        <h4>"I was an introvert anyway"<br><span>Chantelle Ross, Nothing Changed.</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <a href="stories.html" class="button">Learn More >> </a>
+</div>
+
+<div id="events" class="container-fluid">
+  <div class="text-center">
+    <h2>Learn where the best events are happening!</h2>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>BorderHacks Virtual Hackathon</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>When</strong> September 25-27, 2020</p>
+          <p><strong>Where</strong> Virtual</p>
+          <p><strong>What</strong> Virtual hackathon to compete, learn, and win prizes!</p>
+          <p><strong>Why</strong> There's prizes to be won, of course! It'll be super fun.</p>
+        </div>
+        <div class="panel-footer">
+          <h3>FREE</h3>
+          <h4>Virtual Hackathon</h4>
+          <a href="https://www.borderhacks.com/" class="btn btn-log">Go to Website</a>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Spark Festival 2020</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>When</strong> October 12 to 23</p>
+          <p><strong>Where</strong> Online Australia-wide format</p>
+          <p><strong>What</strong> Australia's largest event for startups, innovators and entrepreneurs.</p>
+          <p><strong>Why</strong> A place where people and organisations of the startup world together to imagine and create new, exciting, valuable, and successful ventures.</p>
+        </div>
+        <div class="panel-footer">
+          <h3>REGISTER</h3>
+          <h4>Opening in September</h4>
+          <a href="https://sparkfestival.co/spark-festival-2020/" class="btn btn-log">Go to Website</a>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>“Skies” Online Art Competition</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>When</strong> September 2020</p>
+          <p><strong>Where</strong> Virtual</p>
+          <p><strong>What</strong> An international competition welcoming artists to sumbit their work!</p>
+          <p><strong>Why</strong> Promote the emerging and established artists from all over the world.</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$15</h3>
+          <h4>For TWO entries</h4>
+          <a href="https://artroomgalleryonline.com/call_for_artistss.html" class="btn btn-log">Go to Website</a>
+        </div>
+      </div>      
+    </div>    
+  </div>
+  <a href="events.html" class="button">Learn More >> </a>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Toronto, ON</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1 647-3131-2020</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> info@bashir.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Questions? Concerns! Comment." rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Go to top</p>
+</footer>
+
+<script src="https://widget.flowxo.com/embed.js" data-fxo-widget="eyJ0aGVtZSI6IiNkNGFmMzciLCJ3ZWIiOnsiYm90SWQiOiI1ZjM4MzhjNTE5MGQ2MzAwNTc1MDhlMTkiLCJ0aGVtZSI6IiNkNGFmMzcifSwid2VsY29tZVRleHQiOiJOZWVkIHNvbWUgaGVscCBvciBkb24ndCBrbm93IHdoZXJlIHRvIHN0YXJ0PyBTdGFydCBoZXJlISJ9" async defer>
+	
+</script>
+  
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
